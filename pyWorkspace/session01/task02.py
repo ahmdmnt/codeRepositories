@@ -7,5 +7,5 @@ import math
 circleRadius = int(input("Enter Circle Radius: "))
 circleArea = math.pi * circleRadius**2
 
-print("Area = ", circleArea, "m2")
+print(f"Area = {circleArea:.3f}m2")
 ##########################################################

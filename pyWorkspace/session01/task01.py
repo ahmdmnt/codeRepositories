@@ -8,8 +8,8 @@ randomList=[]; n=20
 for i in range(n):
     randomList.append(random.randint(2, 8))
 
-print("List = ", randomList)
-print("Count of number 4 in list= ", randomList.count(4), "\n\n")
+print(f"List = {randomList}")
+print(f"Count of number 4 in list= {randomList.count(4)}\n\n")
 ##########################################################
 
 
@@ -18,7 +18,7 @@ print("Count of number 4 in list= ", randomList.count(4), "\n\n")
 import string
 
 randomLetter = random.choice(string.ascii_letters)
-print("Letter = ", randomLetter)
+print(f"Letter = {randomLetter}")
 
 vowelList:list = ['a', 'e', 'i', 'u', 'o']
 if randomLetter.lower() in vowelList:
@@ -33,8 +33,8 @@ else:
 import os
 
 envVar_PATH = os.environ['PATH']
-print("PATH=", envVar_PATH)
+print(f"PATH={envVar_PATH}")
 
 envVar_SHELL = os.environ['SHELL']
-print("SHELL=", envVar_SHELL, "\n\n")
+print(f"SHELL={envVar_SHELL}\n\n")
 ##########################################################

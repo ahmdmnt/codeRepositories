@@ -7,10 +7,10 @@ import random
 randomList=[]; n=20
 for i in range(n):
     randomList.append(random.randint(0, 200))
-print("List: ".center(16), randomList)
+print("List: ".rjust(16), randomList)
 
 randomList.sort()
-print("Sorted: ".center(16), randomList)
+print("Sorted: ".rjust(16), randomList)
 
 randomList.sort(reverse=True)
 print("Reverse Sorted: ", randomList)
