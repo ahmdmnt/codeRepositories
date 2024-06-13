@@ -11,8 +11,10 @@ fetchLocation = f"https://ipinfo.io/{ipAddr}/geo"
 fetchLocation = requests.get(fetchLocation)
 
 # print(fetchLocation.json())
-print("City: ".rjust(10), fetchLocation.json()['city'])
-print("Region: ".rjust(10), fetchLocation.json()['region'])
-print("Country: ".rjust(10), fetchLocation.json()['country'])
-print("Location: ", fetchLocation.json()['loc'])
+print("City: ".rjust(11), fetchLocation.json()['city'])
+print("Region: ".rjust(11), fetchLocation.json()['region'])
+print("Country: ".rjust(11), fetchLocation.json()['country'])
+print("Longitude: ", (str(fetchLocation.json()['loc'])).split(",")[1], "E")
+print("Latitude: ".rjust(11), (str(fetchLocation.json()['loc'])).split(",")[0], "N")
+# print("Location: ".rjust(11), fetchLocation.json()['loc'])
 ##########################################################
