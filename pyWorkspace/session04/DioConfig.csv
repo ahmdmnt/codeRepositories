@@ -1,0 +1,8 @@
+0,in,pullup
+1,in,pullup
+2,in,pullup
+3,in,pulldown
+4,in,pulldown
+5,out,high
+6,out,low
+7,out,low

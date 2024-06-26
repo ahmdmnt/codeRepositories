@@ -4,7 +4,10 @@
 ### Prompt Battery Percentage and Make Notification [pyNotifier]
 
 import psutil
-from pynotifier import Notification
+# from pynotifier import Notification
+from plyer import notification
+
+
 
 # function returning time in hh:mm:ss 
 def convertSecondsToTime(seconds): 
@@ -18,17 +21,13 @@ if battery is None:
 	print("No Battery is found! Aborting...")
 	quit()
 else:
-	print(f"Battery percentage : {int(battery.percent)} %") 
-	print(f"Power plugged in : {battery.power_plugged}")
-	if (battery.power_plugged == False):
-		print(f"Battery left : {convertSecondsToTime(battery.secsleft)}")
+	batteryDescription = f"Battery percentage : {int(battery.percent)} %\n\nPlease Connect AC Adpater Plug!"
+	print(batteryDescription)
 
-batteryDescription = f"Battery percentage : {int(battery.percent)} %\nBattery left : {convertSecondsToTime(battery.secsleft)}\nPlease Connect AC Adpater Plug!"
-print(batteryDescription)
-Notification(
-	title="Battery Precentage Warning",
-	description=batteryDescription,
-	duration=10,
-	urgency='normal'
-).send()
+	if(int(battery.percent) <= 25):
+		notification.notify(
+			title="Battery Percentage Warning",
+			message=batteryDescription,
+			timeout=20
+		)
 ##########################################################

@@ -1,0 +1,10 @@
+Return Type,Function Name,Arguments
+void,__DIO_setPinDirection,"uint8 port_name,uint8 pin_name,uint8 direction"
+void,__DIO_enableInternalPullupResistance,"uint8 port_name,uint8 pin_name"
+void,__DIO_writeOutputPinValue,"uint8 port_name,uint8 pin_name,uint8 value"
+uint8,__DIO_readInputPinValue,"uint8 port_name,uint8 pin_name"
+void,__DIO_toggleOutputPinValue,"uint8 port_name,uint8 pin_name"
+void,__DIO_setPortDirection,"uint8 port_name, uint8 direction"
+void,__DIO_enablePortInternalPullupResistance,uint8 port_name
+void,__DIO_writeOutputPortValue,"uint8 port_name,uint8 value"
+uint8,__DIO_readInputPortValue,uint8 port_name
