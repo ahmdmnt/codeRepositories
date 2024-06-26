@@ -18,7 +18,6 @@ PINA = 0x00
 
 with open(FILE_PATH, mode ='r')as dioConfigFile:
     dioConfigCSV = csv.reader(dioConfigFile, delimiter=',')
-    line_count = 0
     for dioConfig in dioConfigCSV:
 
         if(dioConfig[1] == "out"):
@@ -38,8 +37,7 @@ with open(FILE_PATH, mode ='r')as dioConfigFile:
             elif(dioConfig[2] == "pulldown"):
                 PINA = clear_bit(PINA, int(dioConfig[0]))
 
-print(bin(DDRA))
-print(bin(PORTA))
-print(bin(PINA))
-
+print(f" DDRA: {DDRA:0{8}b}")
+print(f"PORTA: {PORTA:0{8}b}")
+print(f" PINA: {PINA:0{8}b}")
 ##########################################################
