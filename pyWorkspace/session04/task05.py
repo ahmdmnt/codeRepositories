@@ -8,7 +8,6 @@ import psutil
 from plyer import notification
 
 
-
 # function returning time in hh:mm:ss 
 def convertSecondsToTime(seconds): 
 	minutes, seconds = divmod(seconds, 60) 
