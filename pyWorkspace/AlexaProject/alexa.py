@@ -133,18 +133,22 @@ class Alexa:
                 return
         for word in alexaRecogWords[self.lang]["google"]:
             if word in self.textData:
+                self.Speak("requestOK")
                 webbrowser.open("www.google.com")
                 return
         for word in alexaRecogWords[self.lang]["facebook"]:
             if word in self.textData:
+                self.Speak("requestOK")
                 webbrowser.open("www.facebook.com")
                 return
         for word in alexaRecogWords[self.lang]["vscode"]:
             if word in self.textData:
+                self.Speak("requestOK")
                 os.system("code &")
                 return
         for word in alexaRecogWords[self.lang]["youtube"]:
             if word in self.textData:
+                self.Speak("requestOK")
                 webbrowser.open("www.youtube.com")
                 return
         ################################################################

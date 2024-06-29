@@ -14,9 +14,7 @@ if __name__ == "__main__":
         while not(requestRecognized):
             alexaInstance.Listen(voiceCommandDuration, voiceCommandFile)
             requestRecognized = alexaInstance.RecognizeRequest(voiceCommandFile)
-            if requestRecognized:
-                alexaInstance.Speak("requestOK")
-            else:
+            if not(requestRecognized):
                 alexaInstance.Speak("requestNOK")
 
         alexaInstance.Respond()
