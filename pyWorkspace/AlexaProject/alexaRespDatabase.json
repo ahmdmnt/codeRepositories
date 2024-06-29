@@ -1,0 +1,24 @@
+{
+    "ar": {
+        "welcome": "مرحبا، كيف يمكنني المساعدة؟",
+        "request": "كيف يمكنني المساعدة؟",
+        "requestOK":"بالتأكيد! الطلب قيد الإجراء",
+        "requestNOK":"معذرة، لم استطيع فهم الطلب",
+        "time": " الوقت الآن هو",
+        "day": " اليوم هو",
+        "days": ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"],
+        "anotherRequest": "هل تريد طلب آخر؟",
+        "bye": "مع السلامة، إلى اللقاء"
+    },
+    "en": {
+        "welcome": "Hello, How can I help you?",
+        "request": "How can I help you?",
+        "requestOK":"Sure, The Request is under processing",
+        "requestNOK":"Sorry, I couldn't understand the request",
+        "time": "The time now is ",
+        "day": "Today is ",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "anotherRequest": "Do you want to perform another Request?",
+        "bye": "Goodbye, see you later"
+    }
+}

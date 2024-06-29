@@ -55,4 +55,4 @@ p2 = Point(2, 2)
 
 p3 = p1+p2      # p1.__add__(p2)
 print(p3.xCoord)
-print(p3.yCoord) 
+print(p3.yCoord)  

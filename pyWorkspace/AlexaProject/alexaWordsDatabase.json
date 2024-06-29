@@ -1,0 +1,24 @@
+{
+    "en": {
+        "welcome": ["hello"],
+        "no": ["no"],
+        "yes": ["yes"],
+        "clock": ["clock", "time", "what time"],
+        "day":  ["day", "today"],
+        "google": ["google", "open google", "Google"] ,
+        "facebook": ["facebook", "open facebook", "Facebook"],
+        "vscode": ["vs", "code", "visual", "studio", "Code"],
+        "youtube": ["youtube", "open youtube", "Youtube"]
+    },
+    "ar": {
+        "welcome": ["اهلا", "وسهلا"],
+        "yes": ["اه", "نعم", "ايوه", "ايوة"],
+        "no": ["لا", "لأ", "مفيش"],
+        "clock": ["الساعة", "ساعة", "الوقت", "وقت", "الساعه", "ساعه"],
+        "day":  ["اليوم", "يوم", "انهاردة", "النهاردة", "التاريخ"],
+        "google": ["جوجل"],
+        "facebook": ["الفيسبوك"],
+        "vscode": ["كود", "الكود"],
+        "youtube": ["اليوتيوب", "يوتيوب"]
+    }
+}
