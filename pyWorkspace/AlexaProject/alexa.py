@@ -182,6 +182,7 @@ class Alexa:
 
 
 if __name__ == "__main__":
+    ## For testing module Only ..
     voiceCommandDuration = 5 # Duration in seconds
     voiceCommandFile = "voiceCommandRecord.wav"  # Output file name
 
@@ -190,3 +191,4 @@ if __name__ == "__main__":
     alexaInstance.RecognizeRequest(voiceCommandFile)
     alexaInstance.Speak("Hello, Ahmed, Yes sure, Request is under processing!")
     alexaInstance.CleanVoiceRecord(voiceCommandFile)
+    ## End of Test Code

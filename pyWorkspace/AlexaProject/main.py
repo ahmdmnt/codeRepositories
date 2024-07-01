@@ -24,7 +24,3 @@ if __name__ == "__main__":
         if(exitApp):
             alexaInstance.Speak("bye")
             break
-        
-
-    
-
