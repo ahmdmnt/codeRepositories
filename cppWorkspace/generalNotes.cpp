@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 
+int mul(int a, int b=0);        //default parameters are set in last args in prototype      
+float mul(float a, float b);
+
 int main() {
     int i = 0;
 
@@ -21,7 +24,24 @@ int main() {
     // 4- Ranged-base for Loop
     for(auto itr: numList) {        // 5- auto ,, automatic detect datatype 
         std::cout << itr << " ";
-    }
+    } 
     std::cout<< std::endl;
+
+    // Heap and Dynamic Memory allocation
+    int *intPtr = new int(10);      // Allocate and Initalize
+    std::cout << *intPtr;           
+    *intPtr = 45;                   // Set Data
+    delete intPtr;                  // Delete allocated value
+    intPtr = nullptr;               // Remove pointing address
+
     return 0;
+}
+
+//Function Overloading (mangle feature) -- BUT I HAVE TO SEND CORRECT ARGUMENT TYPE
+int mul(int a, int b) {
+    return a*b;
+}
+
+float mul(float a, float b) {
+    return a*b;
 }
