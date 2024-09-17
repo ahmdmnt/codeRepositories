@@ -1,6 +1,6 @@
 #include <iostream>
 #include <map>
-#include <set>
+#include <unordered_map>
 
 /*
     MAP
@@ -8,13 +8,18 @@
 */
 
 void print(std::map<std::string, std::string>& l_map);
+void print(std::unordered_map<std::string, std::string>& l_map);
 
 int main() {
 
     /*
         MAP
+
+        Commonly used: Unordered Map ... 
+            Because i didn;t need the arrangement ... and unordered is MUCH faster.
     */
-    std::map<std::string, std::string> dB = {
+    // std::map<std::string, std::string> dB = {
+    std::unordered_map<std::string, std::string> dB = {
         {"Name", "Ahmed"},
         {"Job", "SW Engineer"}
     };                                              // By Definition
@@ -40,6 +45,23 @@ int main() {
     dB.erase("Address");
     print(dB);
 
+    /*
+        MULTIMAP .. Multi Keys available
+        
+        is not commonly used ... becuz it is non sense.
+        if i need key has multiple values i can use normal Map as below
+        std::map< std::string, std::vector<std::string> >
+        {
+            {"Fruits", {"Orange", "Apple", ...} },
+            .....
+        }
+    */
+    std::multimap<std::string, std::string> dB2 = {
+        {"fruit", "Orange"},
+        {"fruit", "Apple"},
+        {"fruit", "Peach"}
+    };
+
     return 0;
 }
 
@@ -52,4 +74,10 @@ void print(std::map<std::string, std::string>& l_map) {
     //     std::cout << it->first << ": " << it->second << std::endl;
     // }
     // std::cout << std::endl;
+}
+void print(std::unordered_map<std::string, std::string>& l_map) {
+    
+    for(auto it: l_map) {
+        std::cout << it.first << ": " << it.second << std::endl;
+    }
 }
