@@ -1,8 +1,17 @@
 /*
     Template:
-        Types:
-        1. Template Class.
-        2. Template Function.
+        Different Types:-
+        ------------------
+            1. Template Class:
+                - Normal Class Template.
+                - Normal Class Template with Template function.
+                - Primary Template & Explicit/Partial Specialization.
+                - Default Typename Template.
+                - Constant Expression in Template Definition.
+                - Variadic Template.
+            2. Template Function:
+                - Single Argument.
+                - Multiple Arguments.
 */
 #include <iostream>
 #include <memory>
