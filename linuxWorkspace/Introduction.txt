@@ -1,0 +1,59 @@
+--------------------------------- Introduction to Linux - Session 1 ---------------------------------
+-----------------------------------------------------------------------------------------------------
+
+What is linux?
+
+    - Linux is mainly an OS Kernel.
+    - It is the core of various Linux Distros (Ubuntu, Kali, CentOS, etc..)
+        - Distro: Linux Kernel + Userspace.
+--------------------------------------------------------------------------
+
+What is the Benefit of Linux (Embedded Linux)?
+
+    - Less Development time.
+        - Integrate already available DeviceDrivers (Camera, etc..).
+        - Using already available OS (Linux OS).
+    - Less Cost.
+        - Already available SW (OS, Drivers) used directly.
+        - No licensing.
+    - Better Quality in Low-Level SW.
+        - Hunderds of ppl already developed these SW and massive testing/ehancment has been done.
+    - Community.
+        - Multiple of available developers already used (Linux/Drivers),
+          help is available on internet/forums.
+    - Stability.
+        Known stable and reliable code used and tested by large number of developers.
+--------------------------------------------------------------------------
+
+What are the difference between different linux systems?
+
+    - Most probably they are different Userspaces (Kali, Ubuntu, Centos).
+      the Available features in Userspace are the main different according to your usage.
+--------------------------------------------------------------------------
+
+Features of Linux?
+
+    - Open-Source: Source Code is free and available.
+    - Protability: Run on various HW Platform.
+    - Multi-User : 
+    - Networking : 
+    - Security   :  
+--------------------------------------------------------------------------
+
+Embedded Linux Main HW Components:
+    - 
+--------------------------------------------------------------------------
+
+Embedded Linux Main SW Components: (EL Youtube videos)
+    - Toolchain.
+    - Bootloader.
+    - Kernel.
+    - Root FileSystem.
+--------------------------------------------------------------------------
+
+Linux Booting Sequence:
+    - BIOS:
+    Basic Input/Output System Role + Executes/Load MBR (Get SW fro ex from Flash and LOAD it in RAM to be EXECUTEd):
+        - Check no Short Circut and Basic HW Availablity checks.
+        - Check available booting devices, and boot through it (ex USB).
+    - 
