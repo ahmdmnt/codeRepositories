@@ -1,5 +1,0 @@
-/*
-* CLASS HEADER FILE: myString
-*/
-
-
