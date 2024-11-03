@@ -5,15 +5,24 @@
 ####################################################
 
 ## SCRIPT PREPARATIONS
-SCRIPTS_DIR="/home/ahmedmont/_GitHub/codeRepositories/bashWorkspace/bash-scripts"
+SCRIPTS_DIR="/_GitHub/codeRepositories/bashWorkspace/bash-scripts"
 LIST_OF_SCRIPTS="battery-notify.sh
 cpp-class-generator.sh
 open-directory.sh
 pc-handle.sh
-auto-translate.sh"
+auto-translate.sh
+check-network-devices.sh
+access-file-xdot.sh
+cli-text-insert.sh"
 ####################################################
 
 ## ACCEPT USER INPUT AND RUN DESIRED SCRIPT
 SELECTED_SCRIPT=$(echo -e "$LIST_OF_SCRIPTS" | rofi -dmenu)
-$SCRIPTS_DIR/$SELECTED_SCRIPT
+
+if [ "$SELECTED_SCRIPT" = "cli-text-insert.sh" ]; then
+    $HOME/$SCRIPTS_DIR/$SELECTED_SCRIPT                                           
+else
+    gnome-terminal -- bash -c "$HOME/$SCRIPTS_DIR/$SELECTED_SCRIPT; exec bash"      # Open New Terminal
+fi
+
 ####################################################

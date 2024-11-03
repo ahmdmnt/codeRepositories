@@ -19,7 +19,9 @@
     ## until
  # Along with using:
  # Whole available Linux Commands of shell
-################################
+
+## For Extra Information on Bash: https://devhints.io/bash
+###########################################################
 
 ## Multiple Line Comment
 <<COMMENT
@@ -42,6 +44,7 @@ echo "TEXT_SENTENCE"
 echo "Hello $name"
 echo "$grade%"
 echo $job
+print "Job is %s", "$job"   ################
 #################################################################
 
 ## using Linux Commands in Bash scripts 

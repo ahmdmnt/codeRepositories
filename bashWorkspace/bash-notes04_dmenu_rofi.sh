@@ -1,5 +1,6 @@
 #! /bin/bash
 
+
 ## dmenu (suckless-tools)
 ## dmenu --> above taskbar for Options
 selectedColor=$(echo -e "red\ngreen\nblue" | dmenu)
@@ -27,3 +28,6 @@ elif [ $selectedColor = "yellow" ]; then
 else
     echo "other color"
 fi
+
+## For Extra Information on Bash: https://devhints.io/bash
+###########################################################

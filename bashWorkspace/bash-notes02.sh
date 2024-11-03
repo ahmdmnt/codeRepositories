@@ -33,3 +33,6 @@ for i in $(seq 1 $#); do
     shift
 done
 ################################
+
+## For Extra Information on Bash: https://devhints.io/bash
+###########################################################

@@ -1,0 +1,6 @@
+[Unit]
+Description=My Script Fetch System Current Date
+[Service]
+ExecStart=/home/ahmedmont/_GitHub/codeRepositories/bashWorkspace/bash-notes18_systemd_service.sh 
+[Install]
+WantedBy=multi-user.target

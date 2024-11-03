@@ -1,5 +1,12 @@
 #! /bin/bash
 
+### BASH Scripting Content ###
+ # Conditions
+    ## if
+    ## case
+    ## select
+################################
+
 ## If Condition
 if [ -z "$address" ]; then
     echo "Unfortunately, no Address recorded!"
@@ -68,3 +75,6 @@ select word in write read insert append erase; do
     esac
 done
 #################################################################
+
+## For Extra Information on Bash: https://devhints.io/bash
+###########################################################
