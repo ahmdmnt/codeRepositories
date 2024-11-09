@@ -24,3 +24,5 @@ declare -A TEXT_INSERT=(
 SELECTED_KEY=$(printf "%s\n" "${TEXT_INSERT_KEY[@]}" | rofi -dmenu -p "Select Desired Manipulation")
 # Select Cli Text
 xdotool type -delay 30 "${TEXT_INSERT[$SELECTED_KEY]}"
+
+#PS1='\e[36m\e[1m\u@legion: \e[0m\e[32m\W\e[0m $ '
