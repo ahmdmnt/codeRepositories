@@ -2,7 +2,6 @@
 
 import tkinter as gui
 import RPi.GPIO as GPIO
-import threading
 
 
 # Application Configuration
